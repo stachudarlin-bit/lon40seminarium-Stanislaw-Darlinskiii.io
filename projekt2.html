@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resistor Color Code Calculator</title>
+  <link rel="stylesheet" href="css2.css" type="text/css">
+  <script src="java2.js" defer></script>
+</head>
+<body>
+  <main class="card">
+    <h1>Resistor Color Code Calculator</h1>
+    <p class="hint">Choose band colors to calculate resistance.</p>
+
+    <section class="grid">
+      <div>
+        <label for="band1">Band 1 (first digit)</label>
+        <select id="band1"></select>
+      </div>
+      <div>
+        <label for="band2">Band 2 (second digit)</label>
+        <select id="band2"></select>
+      </div>
+      <div>
+        <label for="band3">Band 3 (multiplier)</label>
+        <select id="band3"></select>
+      </div>
+      <div>
+        <label for="band4">Band 4 (tolerance)</label>
+        <select id="band4"></select>
+      </div>
+    </section>
+
+    <p id="result" class="result">Resistance: -</p>
+  </main>
+</body>
+</html>
