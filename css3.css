@@ -1,0 +1,48 @@
+#container {
+    background-color: AliceBlue;
+    max-width: 640px;
+    margin: 24px auto;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.fig {
+    margin-top: 12px;
+}
+
+h1 {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida", sans-serif;
+    font-size: 24px;
+    font-style: italic;
+    text-align: center;
+    margin: 0 0 12px 0;
+}
+
+.box {
+    min-height: 180px;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+label {
+    display: inline-block;
+    margin-top: 8px;
+}
+
+input[type="number"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 8px;
+    margin-top: 4px;
+}
+
+input[type="button"] {
+    margin-top: 12px;
+    padding: 6px 12px;
+}
+
+#wynik_pr {
+    margin-top: 10px;
+    font-weight: bold;
+}

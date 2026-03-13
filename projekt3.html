@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Figury geometryczne</title>
+    <link href="css3.css" rel="stylesheet" type="text/css">
+    <script src="java3.js" defer></script>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Figury geometryczne</h1>
+
+        <div class="fig">
+            <fieldset class="box">
+                <legend>Prostokąt</legend>
+
+                <label for="pr_a">Długość boku a</label><br>
+                <input type="number" id="pr_a" name="pr_a" step="any" min="0"><br>
+
+                <label for="pr_b">Długość boku b</label><br>
+                <input type="number" id="pr_b" name="pr_b" step="any" min="0"><br>
+
+                <input type="button" value="Oblicz" onclick="obliczPr();">
+                <div id="wynik_pr" aria-live="polite"></div>
+            </fieldset>
+        </div>
+
+        <div class="fig">
+            <fieldset class="box">
+                <legend>Trójkąt (pole: 1/2 * a * h)</legend>
+
+                <label for="tr_a">Długość podstawy a</label><br>
+                <input type="number" id="tr_a" name="tr_a" step="any" min="0"><br>
+
+                <label for="tr_h">Wysokość h</label><br>
+                <input type="number" id="tr_h" name="tr_h" step="any" min="0"><br>
+
+                <label for="tr_b">Długość boku b</label><br>
+                <input type="number" id="tr_b" name="tr_b" step="any" min="0"><br>
+
+                <label for="tr_c">Długość boku c</label><br>
+                <input type="number" id="tr_c" name="tr_c" step="any" min="0"><br>
+
+                <input type="button" value="Oblicz" onclick="obliczTr();">
+                <div id="wynik_tr" aria-live="polite"></div>
+            </fieldset>
+        </div>
+
+        <div class="fig">
+            <fieldset class="box">
+                <legend>Trapez (pole: (a + b) / 2 * h)</legend>
+
+                <label for="tp_a">Długość podstawy a</label><br>
+                <input type="number" id="tp_a" name="tp_a" step="any" min="0"><br>
+
+                <label for="tp_b">Długość podstawy b</label><br>
+                <input type="number" id="tp_b" name="tp_b" step="any" min="0"><br>
+
+                <label for="tp_h">Wysokość h</label><br>
+                <input type="number" id="tp_h" name="tp_h" step="any" min="0"><br>
+
+                <label for="tp_c">Długość boku c</label><br>
+                <input type="number" id="tp_c" name="tp_c" step="any" min="0"><br>
+
+                <label for="tp_d">Długość boku d</label><br>
+                <input type="number" id="tp_d" name="tp_d" step="any" min="0"><br>
+
+                <input type="button" value="Oblicz" onclick="obliczTp();">
+                <div id="wynik_tp" aria-live="polite"></div>
+            </fieldset>
+        </div>
+
+        <div class="fig">
+            <fieldset class="box">
+                <legend>Koło</legend>
+
+                <label for="ko_r">Promień r</label><br>
+                <input type="number" id="ko_r" name="ko_r" step="any" min="0"><br>
+
+                <input type="button" value="Oblicz" onclick="obliczKo();">
+                <div id="wynik_ko" aria-live="polite"></div>
+            </fieldset>
+        </div>
+
+    </div>
+
+</body>
+</html>
