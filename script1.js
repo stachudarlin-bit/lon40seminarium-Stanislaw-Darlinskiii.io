@@ -106,7 +106,8 @@ function updateResult() {
     result.textContent = "Rezystancja: wybierz kolory wszystkich pasków.";
   } else {
     const resistance = ((b1.value * 100) + (b2.value * 10) + b3.value) * b4.value;
-    result.textContent = `Rezystancja: ${formatOhms(resistance)} (+/- ${b5.value}%)`;
+    const toleranceOhms = resistance * (b5.value / 100);
+    result.textContent = `Rezystancja: ${formatOhms(resistance)} (± ${formatOhms(toleranceOhms)})`;
   }
 
   // second resistor (4-band)
@@ -119,7 +120,8 @@ function updateResult() {
     result2.textContent = "Drugi rezystor: wybierz kolory wszystkich pasków.";
   } else {
     const resistance2 = (c1.value * 10 + c2.value) * c3.value;
-    result2.textContent = `Drugi rezystor: ${formatOhms(resistance2)} (+/- ${c4.value}%)`;
+    const toleranceOhms2 = resistance2 * (c4.value / 100);
+    result2.textContent = `Drugi rezystor: ${formatOhms(resistance2)} (± ${formatOhms(toleranceOhms2)})`;
   }
 }
 
